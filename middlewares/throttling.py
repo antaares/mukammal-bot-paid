@@ -33,5 +33,5 @@ class ThrottlingMiddleware(BaseMiddleware):
             raise CancelHandler()
 
     async def message_throttled(self, message: types.Message, throttled: Throttled):
-        if throttled.exceeded_count <= 2:
-            await message.reply("Too many requests!")
+        if throttled.exceeded_count <= 3:
+            await message.reply("Bir vaqtda ko'p xabar yozish mumkin emas!")

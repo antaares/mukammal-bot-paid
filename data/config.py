@@ -1,10 +1,10 @@
-from environs import Env
+# set global config variables
 
-# environs kutubxonasidan foydalanish
-env = Env()
-env.read_env()
+# token for bot
+BOT_TOKEN = '5602232659:AAGLqdnoHt3qYpQKRUXwm6lQgsPfhQrxw4s'
 
-# .env fayl ichidan quyidagilarni o'qiymiz
-BOT_TOKEN = env.str("BOT_TOKEN")  # Bot toekn
-ADMINS = env.list("ADMINS")  # adminlar ro'yxati
-IP = env.str("ip")  # Xosting ip manzili
+# admins
+
+ADMINS = [1393139047]
+
+# Path: data\config.py
